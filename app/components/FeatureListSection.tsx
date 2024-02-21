@@ -1,5 +1,7 @@
 function FeatureListSection() {
-  return <div>FeatureListSection</div>;
+  return (
+    <section className="flex flex-col items-center">FeatureListSection</section>
+  );
 }
 
 export default FeatureListSection;

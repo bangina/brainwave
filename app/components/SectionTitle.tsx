@@ -5,7 +5,7 @@ interface SectionTitleProps {
 
 function SectionTitle({ title, description }: SectionTitleProps) {
   return (
-    <article>
+    <article className="max-w-[602px]">
       <h2 className="text-center font-bold text-[60px] leading-[65px] tracking-[-2px] mb-[44px]">
         {title}
       </h2>

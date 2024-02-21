@@ -6,14 +6,18 @@ function Header() {
     { href: "/", label: "contact" },
   ];
   return (
-    <header>
+    <header className="bg-white flex items-center justify-between max-w-[1110px] mx-auto py-[24px]">
       <h1>
-        <a href="/" aria-label="Brainwave.io">
+        <a
+          href="/"
+          aria-label="Brainwave.io"
+          className="text-[24px] font-bold leading-[28px] tracking-[-0.1px]"
+        >
           Brainwave.io
         </a>
       </h1>
       <nav>
-        <ul className="flex gap-4">
+        <ul className="flex gap-8 items-center capitalize font-bold text-[15px] leading-[26px] tracking-[-0.1px]">
           {navList.map((navItem) => (
             <li key={navItem.label}>
               <a href={navItem.href} aria-label={`View ${navItem.label}`}>
@@ -21,12 +25,12 @@ function Header() {
               </a>
             </li>
           ))}
-          <div />
+          <div className="w-[1px] h-[21px] bg-[#D5D7DD]" />
           <a href="/" aria-label="sign in">
             sign in
           </a>
-          <button>
-            <a href="/" aria-label="sign up">
+          <button className="rounded-[8px] py-[13px] px-[30px] bg-blue leading-none text-white">
+            <a href="/" aria-label="sign up" className="capitalize">
               sign up
             </a>
           </button>

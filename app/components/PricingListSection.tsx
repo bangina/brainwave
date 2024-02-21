@@ -5,36 +5,44 @@ import ToggleSwitch from "./ToggleSwitch";
 import PricingCard from "./PricingCard";
 
 const benefitsMap = {
-  benefit1: "benefit1 description",
-  benefit2: "benefit2 description",
-  benefit3: "benefit3 description",
+  benefit1: "Commercial License",
+  benefit2: "100+ HTML UI Elements",
+  benefit3: "01 Domain Support",
+  benefit4: "6 Month Premium Support",
+  benefit5: "Lifetime Updates",
 };
 const pricingList = [
   {
-    name: "A",
+    name: "starter",
     price: 19,
     benefitList: [
-      { id: "benefit1", available: false, description: benefitsMap.benefit1 },
-      { id: "benefit2", available: false, description: benefitsMap.benefit2 },
-      { id: "benefit3", available: false, description: benefitsMap.benefit3 },
+      { id: "benefit1", available: true, description: benefitsMap.benefit1 },
+      { id: "benefit2", available: true, description: benefitsMap.benefit2 },
+      { id: "benefit3", available: true, description: benefitsMap.benefit3 },
+      { id: "benefit4", available: false, description: benefitsMap.benefit4 },
+      { id: "benefit5", available: false, description: benefitsMap.benefit5 },
     ],
   },
   {
-    name: "B",
+    name: "standard",
     price: 29,
     benefitList: [
       { id: "benefit1", available: true, description: benefitsMap.benefit1 },
-      { id: "benefit2", available: false, description: benefitsMap.benefit2 },
-      { id: "benefit3", available: false, description: benefitsMap.benefit3 },
+      { id: "benefit2", available: true, description: benefitsMap.benefit2 },
+      { id: "benefit3", available: true, description: benefitsMap.benefit3 },
+      { id: "benefit4", available: true, description: benefitsMap.benefit4 },
+      { id: "benefit5", available: false, description: benefitsMap.benefit5 },
     ],
   },
   {
-    name: "C",
+    name: "premium",
     price: 39,
     benefitList: [
       { id: "benefit1", available: true, description: benefitsMap.benefit1 },
       { id: "benefit2", available: true, description: benefitsMap.benefit2 },
-      { id: "benefit3", available: false, description: benefitsMap.benefit3 },
+      { id: "benefit3", available: true, description: benefitsMap.benefit3 },
+      { id: "benefit4", available: true, description: benefitsMap.benefit4 },
+      { id: "benefit5", available: true, description: benefitsMap.benefit5 },
     ],
   },
 ];

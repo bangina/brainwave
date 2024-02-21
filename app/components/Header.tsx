@@ -6,12 +6,12 @@ function Header() {
     { href: "/", label: "contact" },
   ];
   return (
-    <header className="bg-white flex items-center justify-between max-w-[1110px] mx-auto py-[24px]">
+    <header className="bg-white flex items-center justify-between max-w-[1110px] mx-auto py-[24px] font-roboto">
       <h1>
         <a
           href="/"
           aria-label="Brainwave.io"
-          className="text-[24px] font-bold leading-[28px] tracking-[-0.1px]"
+          className="text-[24px] font-bold leading-[28px] tracking-[-0.1px] font-rubik"
         >
           Brainwave.io
         </a>

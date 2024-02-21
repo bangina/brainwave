@@ -13,7 +13,12 @@ const config: Config = {
       white: "#FFFFFF",
       lightBlue: "rgba(71, 59, 240, 0.08)",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

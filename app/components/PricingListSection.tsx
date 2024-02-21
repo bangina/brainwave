@@ -2,6 +2,7 @@
 import { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import ToggleSwitch from "./ToggleSwitch";
+import PricingCard from "./PricingCard";
 
 const benefitsMap = {
   benefit1: "benefit1 description",
@@ -49,11 +50,7 @@ function PricingListSection() {
       <ToggleSwitch isYearly={isYearly} setIsYearly={setIsYearly} />
       <ul className="flex gap-[32px] mt-[53px] mb-[116px]">
         {pricingList.map((pricingItem) => (
-          <li key={pricingItem.name}>
-            {pricingItem.name}
-            <br />
-            {pricingItem.price}
-          </li>
+          <PricingCard pricingItem={pricingItem} key={pricingItem.name} />
         ))}
       </ul>
     </section>
